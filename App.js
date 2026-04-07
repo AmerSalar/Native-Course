@@ -12,6 +12,7 @@ import {
   Platform,
   Dimensions,
   useWindowDimensions,
+  ImageBackground,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import "./global.css";
@@ -19,96 +20,34 @@ import {
   useDeviceOrientation,
   useDimensions,
 } from "@react-native-community/hooks";
+import {} from "react-native-web";
 
 export default function App() {
   return (
     <SafeAreaView
       edges={["top", "left", "right", "bottom"]}
-      className={"flex-1 bg-white justify-center items-center"}
+      className={"flex-1 items-center"}
     >
-      <Text
-        className={"text-black"}
-        onPress={() => {
-          console.log("text clicked");
+      <ImageBackground
+        source={{
+          width: 400,
+          height: 700,
+          uri: "https://picsum.photos/400/700",
         }}
+        className={"flex-1 justify-end items-center"}
       >
-        window width: {Dimensions.get("window").width}, window height:{" "}
-        {Dimensions.get("window").height}
-      </Text>
-      <Text>
-        Width: {useWindowDimensions().width}, {useDeviceOrientation()}
-      </Text>
-      <View className={"flex-row gap-1"}>
-        <Image
-          source={require("./assets/icon.png")}
-          className={"w-20 h-20 rounded-full border mt-1"}
-        ></Image>
-        <Image
-          blurRadius={4}
-          source={{
-            width: 200,
-            height: 200,
-            uri: "https://picsum.photos/200/200",
-          }}
-          className={"w-20 h-20 rounded-full border mt-1"}
-        ></Image>
-      </View>
-      <TouchableWithoutFeedback
-        onPress={() => {
-          console.log("Touched");
-        }}
-      >
-        <Text className={"mt-5 p-2 border rounded-full"}>
-          touchable without feedback
-        </Text>
-      </TouchableWithoutFeedback>
-      <TouchableHighlight
-        onPress={() => {
-          console.log("Highlighted");
-        }}
-      >
-        <Text className={"mt-1 p-2 border rounded-full"}>
-          touchable highlight
-        </Text>
-      </TouchableHighlight>
-      <TouchableOpacity
-        onPress={() => {
-          console.log("Opacity");
-        }}
-      >
-        <Text className={"mt-1 p-2 border rounded-full"}>
-          touchable opacity
-        </Text>
-      </TouchableOpacity>
-      <View className={"flex-row gap-3 mt-2"}>
-        <Button
-          title="Button"
-          onPress={() => {
-            Alert.alert("Feedback", "Button Tapped", [
-              {
-                text: "چیبووە؟",
-                onPress: () => {
-                  Alert.alert("نازانم :)");
-                },
-              },
-              { text: "بەردەوامبوون" },
-            ]);
-          }}
-          className={"hidden"}
-        />
-        <View className={Platform.OS != "ios" ? "hidden" : "visible"}>
-          {/* prompt is IOS only, check with Platform API*/}
-          <Button
-            title="TextMe"
-            onPress={() => {
-              console.log();
-              Alert.prompt("Text", "Write message:", (text) => {
-                console.log(text);
-              });
-            }}
-          />
+        <View className={"bottom-[320]"}>
+          <View
+            className={" bg-red-400 border-4 border-blue-400 rounded-full p-10"}
+          >
+            <Image source={require("./assets/favicon.png")} />
+          </View>
+          <Text className={"text-white "}>Welcome to our app</Text>
         </View>
-      </View>
+
+        <View className={"bg-red-400 w-screen h-[60]"} />
+        <View className={"bg-blue-400 w-screen h-[60]"} />
+      </ImageBackground>
 
       <StatusBar style="auto" />
     </SafeAreaView>
