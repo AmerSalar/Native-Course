@@ -7,9 +7,18 @@ import {
   TouchableWithoutFeedback,
   TouchableHighlight,
   TouchableOpacity,
+  Button,
+  Alert,
+  Platform,
+  Dimensions,
+  useWindowDimensions,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import "./global.css";
+import {
+  useDeviceOrientation,
+  useDimensions,
+} from "@react-native-community/hooks";
 
 export default function App() {
   return (
@@ -23,7 +32,11 @@ export default function App() {
           console.log("text clicked");
         }}
       >
-        Hello World
+        window width: {Dimensions.get("window").width}, window height:{" "}
+        {Dimensions.get("window").height}
+      </Text>
+      <Text>
+        Width: {useWindowDimensions().width}, {useDeviceOrientation()}
       </Text>
       <View className={"flex-row gap-1"}>
         <Image
@@ -67,6 +80,35 @@ export default function App() {
           touchable opacity
         </Text>
       </TouchableOpacity>
+      <View className={"flex-row gap-3 mt-2"}>
+        <Button
+          title="Button"
+          onPress={() => {
+            Alert.alert("Feedback", "Button Tapped", [
+              {
+                text: "چیبووە؟",
+                onPress: () => {
+                  Alert.alert("نازانم :)");
+                },
+              },
+              { text: "بەردەوامبوون" },
+            ]);
+          }}
+          className={"hidden"}
+        />
+        <View className={Platform.OS != "ios" ? "hidden" : "visible"}>
+          {/* prompt is IOS only, check with Platform API*/}
+          <Button
+            title="TextMe"
+            onPress={() => {
+              console.log();
+              Alert.prompt("Text", "Write message:", (text) => {
+                console.log(text);
+              });
+            }}
+          />
+        </View>
+      </View>
 
       <StatusBar style="auto" />
     </SafeAreaView>
