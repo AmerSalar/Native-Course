@@ -1,7 +1,7 @@
 import React from "react";
 
 function insight(props) {
-  return <div></div>;
+  return <></>;
 }
 
 export default insight;

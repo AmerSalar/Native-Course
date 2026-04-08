@@ -6,7 +6,7 @@ import { StatusBar } from "expo-status-bar";
 import { SafeAreaView } from "react-native-safe-area-context";
 // import "../global.css";
 
-function _layout() {
+function RootLayout() {
   return (
     <SafeAreaView edges={["top", "left", "right"]} className={"flex-1"}>
       <Stack
@@ -22,4 +22,4 @@ function _layout() {
   );
 }
 
-export default _layout;
+export default RootLayout;

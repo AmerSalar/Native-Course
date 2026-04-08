@@ -2,7 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import {} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import "./global.css";
-import Welcome from "./app/tabs/Welcome";
+import Welcome from "./Welcome";
 
 export default function App() {
   return (

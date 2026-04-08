@@ -6,4 +6,4 @@ Day 2: We have useful APIs like Alert, Platform, Dimensions and Stylesheet if yo
 and the basics of flex property and how we can use it.
 
 Day 3: I created a to be welcome screen, that has a logo and a label. with 2 buttons being the Login and Sign-up.
-I implemented expo routing, routing groups and so much more.
+I implemented expo routing, routing groups, dynamic routing and so much more.

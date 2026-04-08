@@ -1,7 +1,7 @@
 import React from "react";
 
 function setting(props) {
-  return <div></div>;
+  return <></>;
 }
 
 export default setting;
