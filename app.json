@@ -1,7 +1,8 @@
 {
   "expo": {
     "name": "SellNow",
-    "slug": "SellNow",
+    "slug": "sell-now",
+    "scheme": "sell-now-app",
     "version": "1.0.0",
     "orientation": "default",
     "icon": "./assets/icon.png",
@@ -25,6 +26,7 @@
     "web": {
       "favicon": "./assets/favicon.png",
       "bundler": "metro"
-    }
+    },
+    "plugins": ["expo-router"]
   }
 }

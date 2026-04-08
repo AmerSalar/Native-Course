@@ -1,6 +1,7 @@
 import React from "react";
 import { Text, View, Image, ImageBackground } from "react-native";
 import "../../global.css";
+import { Link } from "expo-router";
 function Welcome() {
   return (
     <ImageBackground
@@ -25,7 +26,24 @@ function Welcome() {
           </View>
           <Text className={"text-blue-500 "}>Welcome to our app</Text>
         </View>
-
+        <Link
+          href="./onboarding"
+          className="bg-black text-blue-200 rounded-full p-3 m-1"
+        >
+          Go onboarding
+        </Link>
+        <Link
+          href="/(auth)/sign-in"
+          className="bg-black text-blue-200 rounded-full p-3 m-1"
+        >
+          Go Sign-in
+        </Link>
+        <Link
+          href="/(auth)/sign-up"
+          className="bg-black text-blue-200 rounded-full p-3 m-1"
+        >
+          Go Sign-up
+        </Link>
         <View className={"bg-blue-300 w-screen h-[60]"} />
         <View className={"bg-blue-400 w-screen h-[60] mb-10"} />
       </View>
