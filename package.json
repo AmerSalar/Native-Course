@@ -13,6 +13,7 @@
     "@react-native-community/hooks": "^100.1.0",
     "babel-preset-expo": "^55.0.16",
     "clsx": "^2.1.1",
+    "dayjs": "^1.11.20",
     "expo": "~54.0.33",
     "expo-constants": "~18.0.13",
     "expo-font": "^55.0.6",

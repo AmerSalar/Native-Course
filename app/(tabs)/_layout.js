@@ -13,7 +13,7 @@ const TabLayout = () => {
         <View
           className={clsx(
             "size-12 items-center justify-center rounded-full bg-[#0000]",
-            focused && "bg-[#ea7a53]",
+            focused && "bg-pill",
           )}
         >
           <Image source={icon} className={"size-6"} />
