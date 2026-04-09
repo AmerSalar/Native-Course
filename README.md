@@ -7,3 +7,5 @@ and the basics of flex property and how we can use it.
 
 Day 3: I created a to be welcome screen, that has a logo and a label. with 2 buttons being the Login and Sign-up.
 I implemented expo routing, routing groups, dynamic routing and so much more.
+
+Day 4: Implemented font rendering with expo-font, and experienced a crash-out when trying to update nativewind :(

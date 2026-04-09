@@ -6,13 +6,14 @@ module.exports = {
     "./App.js",
     "./app/**/*.{js,jsx,ts,tsx}",
     "./app/*.{js,jsx,ts,tsx}",
+    "./components/*.{js,jsx,ts,tsx}",
   ],
   presets: [require("nativewind/preset")],
   theme: {
     extend: {
       colors: {
         primary: colors.primary,
-        accent: colors.accent,
+        pill: colors.pill,
         background: colors.background,
         card: colors.card,
       },
