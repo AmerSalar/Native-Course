@@ -27,6 +27,21 @@
       "favicon": "./assets/favicon.png",
       "bundler": "metro"
     },
-    "plugins": ["expo-router"]
+    "plugins": [
+      "expo-router",
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/fonts/PlusJakartaSans-Regular.ttf",
+            "./assets/fonts/fonts/PlusJakartaSans-Bold.ttf",
+            "./assets/fonts/fonts/PlusJakartaSans-Medium.ttf",
+            "./assets/fonts/fonts/PlusJakartaSans-SemiBold.ttf",
+            "./assets/fonts/fonts/PlusJakartaSans-ExtraBold.ttf",
+            "./assets/fonts/fonts/PlusJakartaSans-Light.ttf"
+          ]
+        }
+      ]
+    ]
   }
 }

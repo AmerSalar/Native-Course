@@ -1,11 +1,9 @@
 import { Text, View } from "react-native";
 
-function insight() {
+export default function Insight() {
   return (
-    <View className={"p-2"}>
-      <Text>Insights</Text>
+    <View className={`flex-1 bg-background p-5`}>
+      <Text className={`text-primary font-sans-regular`}>Insight</Text>
     </View>
   );
 }
-
-export default insight;
