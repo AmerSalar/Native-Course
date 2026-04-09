@@ -7,6 +7,13 @@ import { formatCurrency } from "../../lib/utils";
 import dayjs from "dayjs";
 import ListHeading from "../../components/listHeadings";
 import UpcomingSubscription from "../../components/upcomingSubscriptions";
+/**
+ * Render the home dashboard view with user header, balance card, and list heading.
+ *
+ * Displays the user's avatar and name, an add icon button, the formatted account balance,
+ * and the next renewal date.
+ * @returns {JSX.Element} The component tree for the dashboard view.
+ */
 export default function App() {
   return (
     <View className={"bg-background p-5 flex-1"}>
