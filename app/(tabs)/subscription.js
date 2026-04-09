@@ -1,7 +1,9 @@
-import React from "react";
+import { Text, View } from "react-native";
 
-function subscription(props) {
-  return <></>;
+export default function Insight() {
+  return (
+    <View className={`flex-1 bg-background p-5`}>
+      <Text className={`text-primary font-[sans-regular]`}>Subscription</Text>
+    </View>
+  );
 }
-
-export default subscription;

@@ -1,7 +1,9 @@
-import React from "react";
+import { Text, View } from "react-native";
 
-function setting(props) {
-  return <></>;
+export default function Insight() {
+  return (
+    <View className={`flex-1 bg-background p-5`}>
+      <Text className={`text-primary font-[sans-regular]`}>Setting</Text>
+    </View>
+  );
 }
-
-export default setting;
