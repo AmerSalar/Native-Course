@@ -57,7 +57,7 @@ export const HOME_SUBSCRIPTIONS = [
     currency: "USD",
     billing: "Monthly",
     renewalDate: "2026-03-20T10:00:00.000Z",
-    color: "#f5c542",
+    color: "#f0c040",
   },
   {
     id: "github-pro",
@@ -72,7 +72,7 @@ export const HOME_SUBSCRIPTIONS = [
     currency: "USD",
     billing: "Monthly",
     renewalDate: "2026-03-24T10:00:00.000Z",
-    color: "#e8def8",
+    color: "#f5d8e4",
   },
   {
     id: "claude-pro",
@@ -87,7 +87,7 @@ export const HOME_SUBSCRIPTIONS = [
     currency: "USD",
     billing: "Monthly",
     renewalDate: "2026-03-27T10:00:00.000Z",
-    color: "#b8d4e3",
+    color: "#d3f0f0",
   },
   {
     id: "canva-pro",
