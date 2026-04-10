@@ -16,6 +16,9 @@ module.exports = {
         pill: colors.pill,
         background: colors.background,
         card: colors.card,
+        muted: colors.muted,
+        mutedForeground: colors.mutedForeground,
+        border: colors.border,
       },
       fontFamily: {
         "sans-regular": ["sans-regular"],

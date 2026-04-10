@@ -9,3 +9,5 @@ Day 3: I created a to be welcome screen, that has a logo and a label. with 2 but
 I implemented expo routing, routing groups, dynamic routing and so much more.
 
 Day 4: Implemented font rendering with expo-font, and experienced a crash-out when trying to update nativewind :(
+
+Day 5: Making a nice Home page, where i implemented FlatLists and ScrollViews. horizontal scrolling too.
