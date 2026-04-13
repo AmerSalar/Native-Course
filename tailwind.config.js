@@ -19,6 +19,7 @@ module.exports = {
         muted: colors.muted,
         mutedForeground: colors.mutedForeground,
         border: colors.border,
+        subscription: colors.subscription,
       },
       fontFamily: {
         "sans-regular": ["sans-regular"],
